@@ -1,16 +1,19 @@
 h1 {
-    font: Arial, Helvetica, sansserif;
+    width: 1000px;
+    font-family: Arial, Helvetica, sansserif;
     color: darkblue;
     text-align: center;
 }
 
 p {
-    font: serif;
+    width: 500px;
+    font-family: serif;
     background: lightgray;
     color: teal;
+    align-content: center;
 }
 table #if01 {
-    align-content: space-around;
+    align: center;
     background: #e0ebeb;
     width: 50%;
     padding: 5px;
@@ -28,8 +31,15 @@ th {
     background-color: lightgray;
 }
 
+div #header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
 div {
-  with: 100px;
+  width: 100px;
   height: 400px,
   margin: 30px;
   pagging: 10px;
@@ -47,6 +57,33 @@ div #disclaimer {
   pagging: 10px;
 }
 .punch {
-  
+
   color: red;
+}
+
+/* Bar */
+.topnavbar {
+  display: flex;
+  background-color: black;
+}
+
+/*links */
+.topnavbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/*  hover */
+.topnavbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media (max-width: 700px) {
+  .row, .topnavbar {
+    flex-direction: column;
+  }
 }
